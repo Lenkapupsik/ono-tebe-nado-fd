@@ -8,7 +8,7 @@
 
 .header-menu {
   display: flex;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .header__links-list {
@@ -39,11 +39,11 @@
 
 .header__logo {
   display: block;
-  width: 135px;
+  padding-top: 9px;
 }
 
 .header__logo-image {
-  padding-top: 8px; 
+  width: 136px;
 }
 
 .address {
@@ -61,7 +61,7 @@
   justify-self: end;
   align-items: flex-start;
   max-width: 240px;
-  padding-top: 3px;
+  padding-top: 4px;
   list-style: none;
 }
 
@@ -128,7 +128,7 @@
   justify-content: space-between;
   align-items: end;
   gap: 104px;
-  padding: 650px 50px 50px 50px;
+  padding: 650px 50px 50px;
 }
 
 .cover__description-text {
@@ -172,14 +172,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
-  padding: 0 24px 3px; 
+  padding: 0 24px 3px;
 }
 
 .lots__card-list-item {
   flex-grow: 1;
   flex-basis: 334px;
   min-height: 596px;
-  list-style: none; 
+  list-style: none;
 }
 
 .card {
@@ -236,35 +236,62 @@
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+  line-height: 120%;
 }
 
 .lots__look-more-link {
-  padding: 0 0 120px 64px;
+  padding-left: 64px;
   color: #000000;
   font-weight: 400;
   font-size: 20px;
   text-underline-offset: 4px;
 }
 
-.about{
+.about {
   display: grid;
-  grid-template-columns: 334px 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  padding: 0 24px; 
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  padding: 154px 24px;
 }
-/*
-.about__column {}
-.about__logo {}
-.about__logo-image {}*/
+
+.about__column {
+  width: 100%;
+}
+
+.about__logo {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
+  width: 148px;
+}
 
 .about__title {
   color: #000;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+  padding: 102px 402px 100px 0;
 }
 
-/*.description_block {}*/
+.description_block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 .about__text {
   color: #000;
